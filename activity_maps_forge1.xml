@@ -1,0 +1,57 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="cat.bcn.horta.MapaForgeFragment">
+
+<org.mapsforge.map.android.view.MapView
+    android:id="@+id/mapView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        android:orientation="horizontal"
+
+        <Button
+            android:id="@+id/button_dec"
+            android:layout_width="6mm"
+            android:layout_height="wrap_content"
+            android:text="@string/text_dec"
+            android:onClick="decDistance"
+            />
+        <Button
+            android:id="@+id/button_dist_duration"
+            android:layout_width="12mm"
+            android:layout_height="wrap_content"
+            android:text="@string/text_dist_duration"
+            android:onClick="alternateDistanceDuration"
+            />
+        <Button
+            android:id="@+id/button_inc"
+            android:layout_width="6mm"
+            android:layout_height="wrap_content"
+            android:text="@string/text_inc"
+            android:onClick="incDistance"
+            />
+        <Button
+            android:id="@+id/button_info"
+            android:layout_width="6mm"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/text_info"
+            android:onClick="showInfo"
+            android:textAllCaps="false"
+            />
+        <Button
+            android:id="@+id/button_go"
+            android:layout_width="9mm"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/text_go"
+            android:textAllCaps="false"
+            />
+</LinearLayout>
+</FrameLayout>
